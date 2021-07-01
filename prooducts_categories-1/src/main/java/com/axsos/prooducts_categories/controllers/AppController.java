@@ -43,7 +43,9 @@ public class AppController {
 		
 		model.addAttribute("product", appService.findProductById(id));
 		model.addAttribute("categories", appService.unAddedCategory(appService.findProductById(id)));
+		System.out.println("hi");
 		return "showProduct.jsp";
+		
 	}
 	
 	@PostMapping("/product/addCategory")
